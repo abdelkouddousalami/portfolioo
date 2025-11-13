@@ -29,7 +29,7 @@ function Hero() {
           </p>
           <div className="hero-stats">
             <div className="stat-item">
-              <span className="stat-number">3+</span>
+              <span className="stat-number">2+</span>
               <span className="stat-label">Ans d'Expérience</span>
             </div>
             <div className="stat-divider"></div>
