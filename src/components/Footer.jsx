@@ -15,44 +15,159 @@ function Footer() {
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/elalami-abdelkouddous',
+      url: 'https://www.linkedin.com/in/el-alami-abdelkouddous-215707309/',
       icon: (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
           <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
         </svg>
       )
+    },
+    
+    {
+      name: 'Email',
+      url: 'mailto:abdoalami.ru@gmail.com',
+      icon: (
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      )
     }
   ]
+
+  const quickLinks = [
+    { name: 'Accueil', href: '#home' },
+    { name: 'À Propos', href: '#about' },
+    { name: 'Compétences', href: '#skills' },
+    { name: 'Projets', href: '#projects' },
+    { name: 'Contact', href: '#contact' }
+  ]
+
+  const techStack = ['Spring', 'JavaScript', 'Laravel', 'Java', 'MySQL', 'TailwindCSS', 'React', 'Angular', 'Next', 'Three', 'Symfony']
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-top">
-          <div className="footer-brand">
+        {/* Main Footer Grid */}
+        <div className="footer-grid">
+          {/* Brand Section */}
+          <div className="footer-section footer-brand">
             <div className="footer-logo">
               <img src="/image-removebg-preview.png" alt="Logo" />
             </div>
-            
-            <p>Créer des expériences numériques exceptionnelles à travers un code propre et des solutions innovantes.</p>
+            <p className="brand-description">
+              Développeur Full Stack passionné par la création d'expériences numériques exceptionnelles. 
+              Spécialisé dans le développement web moderne et les solutions innovantes.
+            </p>
+            <div className="footer-stats">
+              <div className="stat-mini">
+                <span className="stat-number">20+</span>
+                <span className="stat-label">Projets</span>
+              </div>
+              <div className="stat-mini">
+                <span className="stat-number">2+</span>
+                <span className="stat-label">Années</span>
+              </div>
+              <div className="stat-mini">
+                <span className="stat-number">10+</span>
+                <span className="stat-label">Clients</span>
+              </div>
+            </div>
           </div>
-          <div className="footer-social">
-            {socialLinks.map((social, index) => (
-              <a
-                key={index}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-                aria-label={social.name}
-              >
-                {social.icon}
+
+          {/* Quick Links */}
+          <div className="footer-section">
+            <h4 className="footer-title">Navigation Rapide</h4>
+            <ul className="footer-links">
+              {quickLinks.map((link, index) => (
+                <li key={index}>
+                  <a href={link.href} className="footer-link">
+                    <span className="link-arrow">→</span>
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Tech Stack */}
+          <div className="footer-section">
+            <h4 className="footer-title">Technologies</h4>
+            <div className="tech-stack-grid">
+              {techStack.map((tech, index) => (
+                <span key={index} className="tech-badge">
+                  {tech}
+                </span>
+              ))}
+            </div>
+            <div className="availability-badge">
+              <span className="status-dot"></span>
+              <span>Disponible pour projets</span>
+            </div>
+          </div>
+
+          {/* Contact & Social */}
+          <div className="footer-section">
+            <h4 className="footer-title">Restons Connectés</h4>
+            <div className="contact-info">
+              <a href="mailto:abdoalami.ru@gmail.com" className="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>abdoalami.ru@gmail.com</span>
               </a>
-            ))}
+              <div className="contact-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>Maroc</span>
+              </div>
+            </div>
+            <div className="footer-social">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                  aria-label={social.name}
+                  title={social.name}
+                >
+                  {social.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
+
+        {/* Footer Bottom */}
         <div className="footer-bottom">
-          <p>&copy; {currentYear} Abdelkouddous El Alami. Tous droits réservés.</p>
-          <p className="footer-tagline">Créé avec React & Passion</p>
+          <div className="footer-bottom-content">
+            <div className="copyright">
+              <p>&copy; {currentYear} Abdelkouddous El Alami. Tous droits réservés.</p>
+              <p className="footer-tagline">
+                <span className="code-bracket">{'<'}</span>
+                Développé avec React & Passion
+                <span className="code-bracket">{'/>'}</span>
+              </p>
+            </div>
+            <button 
+              onClick={scrollToTop} 
+              className="scroll-top-btn"
+              aria-label="Retour en haut"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="18 15 12 9 6 15"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>

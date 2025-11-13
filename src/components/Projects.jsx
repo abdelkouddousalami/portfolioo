@@ -10,24 +10,24 @@ function Projects() {
       demo: "https://l3ochaq.ma"
     },
     {
-      title: "Moteur de Recherche Avancé",
-      description: "Système de recherche intelligent avec filtres multiples (type, matériau, prix). Intégration panier et paiement sécurisé multi-options avec personnalisation bijoux sur mesure.",
-      technologies: ["PHP", "Laravel", "JavaScript", "API RESTful"],
+      title: "Le7rayfi - Plateforme Marocaine des Artisans",
+      description: "Première plateforme digitale au Maroc connectant artisans et clients. Offre des services de formation professionnelle, opportunités d'emploi, promotion des services avec système de réservation en ligne, comparaison de prix transparente et accès à des artisans certifiés dans toutes les villes.",
+      technologies: ["Laravel", "MySQL", "JavaScript", "Bootstrap", "SEO"],
       github: "#",
+      demo: "https://www.le7rayfi.com/"
+    },
+    {
+      title: "Culturoo - Plateforme d'Hospitalité Marocaine",
+      description: "Plateforme complète connectant les voyageurs internationaux avec des familles marocaines authentiques. Système de réservation en temps réel, messagerie instantanée, vérification d'identité, tableau de bord administrateur et SEO avancé avec génération de sitemap.",
+      technologies: ["Laravel 12", "PHP 8.2+", "TailwindCSS 4", "Alpine.js", "SQLite", "Vite"],
+      github: "https://github.com/abdelkouddousalami/cultaroo.git",
       demo: "#"
     },
     {
-      title: "Tableau de Bord Administrateur",
-      description: "Interface interactive complète avec statistiques en temps réel, gestion des stocks, suivi des commandes et analytics avancés pour l'e-commerce.",
-      technologies: ["Angular", "Spring", "PostgreSQL", "Chart.js"],
-      github: "#",
-      demo: "#"
-    },
-    {
-      title: "Application Web Full-Stack",
-      description: "Développement complet avec authentification sécurisée, validation des données, API RESTful et interface responsive selon les meilleures pratiques.",
-      technologies: ["Java", "Laravel", "Angular", "MySQL"],
-      github: "#",
+      title: "Système de Télé-Expertise Médicale",
+      description: "Plateforme de coordination entre médecins généralistes et spécialistes pour optimiser le parcours patient. Gestion complète des consultations, file d'attente intelligente, système de réservation de créneaux et télé-expertise synchrone/asynchrone avec authentification sécurisée et protection CSRF.",
+      technologies: ["Java", "Jakarta EE", "JPA/Hibernate", "JSP/JSTL", "Tomcat", "Maven", "JUnit/Mockito"],
+      github: "https://github.com/abdelkouddousalami/t-l--expertise-m-dicale.git",
       demo: "#"
     }
   ]

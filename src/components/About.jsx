@@ -25,7 +25,7 @@ function About() {
         </div>
         <div className="about-stats">
           <div className="stat-card">
-            <h3>3+</h3>
+            <h3>2+</h3>
             <p>Ans d'Expérience</p>
           </div>
           <div className="stat-card">

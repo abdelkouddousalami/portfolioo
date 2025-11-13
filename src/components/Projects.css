@@ -95,7 +95,7 @@
   padding-bottom: 1.5rem;
   font-weight: 300;
   transition: color 0.4s;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .project-tech {
@@ -193,7 +193,7 @@
   }
 
   .project-description {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
 
   .project-links {
