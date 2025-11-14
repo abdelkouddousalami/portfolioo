@@ -3,6 +3,13 @@ import './Projects.css'
 function Projects() {
   const projects = [
     {
+      title: "FX Deals - Data Warehouse System",
+      description: "Système robuste de gestion de transactions FX (Foreign Exchange) avec validation complète des données, prévention des doublons, gestion d'erreurs avancée et tests unitaires complets. Déploiement Docker avec PostgreSQL, logging détaillé et API REST sécurisée.",
+      technologies: ["Spring Boot", "Java", "PostgreSQL", "Docker", "JUnit", "Maven", "REST API"],
+      github: "https://github.com/abdelkouddousalami/FX-deals.git",
+      demo: "#"
+    },
+    {
       title: "l3ochaq.ma - Plateforme E-commerce Bijoux",
       description: "Plateforme moderne de vente de bijoux avec gestion multi-utilisateurs, système d'achat sécurisé, messagerie instantanée et chatbot IA. Interface responsive avec SEO avancé.",
       technologies: ["Laravel", "MySQL", "React.js", "Bootstrap"],
