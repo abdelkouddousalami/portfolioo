@@ -3,7 +3,7 @@ import './Skills.css'
 function Skills() {
   const skillCategories = [
     {
-      title: "Langages",
+      title: "Languages",
       skills: [
         { name: "Java", level: 90 },
         { name: "PHP", level: 90 },
@@ -21,7 +21,7 @@ function Skills() {
       ]
     },
     {
-      title: "Bases de données",
+      title: "Databases",
       skills: [
         { name: "MySQL", level: 90 },
         { name: "PostgreSQL", level: 85 },
@@ -30,7 +30,7 @@ function Skills() {
       ]
     },
     {
-      title: "Outils & Design",
+      title: "Tools & Design",
       skills: [
         { name: "Git / Docker", level: 85 },
         { name: "Jenkins / GitLab CI/CD", level: 80 },
@@ -42,7 +42,7 @@ function Skills() {
 
   return (
     <section id="skills" className="skills">
-      <h2>Compétences Techniques</h2>
+      <h2>Technical Skills</h2>
       <div className="skills-grid">
         {skillCategories.map((category, index) => (
           <div key={index} className="skill-category">

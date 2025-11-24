@@ -30,10 +30,10 @@ function Header({ activeSection, setActiveSection }) {
         </div>
         
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-          <a onClick={() => scrollToSection('home')} className={activeSection === 'home' ? 'active' : ''}>Accueil</a>
-          <a onClick={() => scrollToSection('about')} className={activeSection === 'about' ? 'active' : ''}>À Propos</a>
-          <a onClick={() => scrollToSection('skills')} className={activeSection === 'skills' ? 'active' : ''}>Compétences</a>
-          <a onClick={() => scrollToSection('projects')} className={activeSection === 'projects' ? 'active' : ''}>Projets</a>
+          <a onClick={() => scrollToSection('home')} className={activeSection === 'home' ? 'active' : ''}>Home</a>
+          <a onClick={() => scrollToSection('about')} className={activeSection === 'about' ? 'active' : ''}>About</a>
+          <a onClick={() => scrollToSection('skills')} className={activeSection === 'skills' ? 'active' : ''}>Skills</a>
+          <a onClick={() => scrollToSection('projects')} className={activeSection === 'projects' ? 'active' : ''}>Projects</a>
           <a onClick={() => scrollToSection('contact')} className={activeSection === 'contact' ? 'active' : ''}>Contact</a>
         </nav>
 

@@ -16,42 +16,42 @@ function Hero() {
         <div className="hero-text">
           <div className="hero-label">
             <span className="label-indicator">●</span>
-            <span className="label-text">DISPONIBLE POUR TRAVAIL</span>
+            <span className="label-text">AVAILABLE FOR WORK</span>
           </div>
           <h1 className="hero-title">
             <span className="title-line">Abdelkouddous El Alami</span>
           </h1>
-          <p className="hero-subtitle">Développeur Full-Stack</p>
+          <p className="hero-subtitle">Full-Stack Developer</p>
           <p className="hero-description">
-            Développeur full-stack spécialisé dans la création d'applications web exceptionnelles. 
-            Je transforme des problèmes complexes en solutions élégantes en utilisant des technologies 
-            modernes, du code propre et des principes de conception centrés sur l'utilisateur.
+            Full-stack developer specialized in creating exceptional web applications. 
+            I transform complex problems into elegant solutions using modern technologies, 
+            clean code, and user-centered design principles.
           </p>
           <div className="hero-stats">
             <div className="stat-item">
               <span className="stat-number">2+</span>
-              <span className="stat-label">Ans d'Expérience</span>
+              <span className="stat-label">Years Experience</span>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
               <span className="stat-number">20+</span>
-              <span className="stat-label">Projets Réalisés</span>
+              <span className="stat-label">Projects Completed</span>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
               <span className="stat-number">100%</span>
-              <span className="stat-label">Satisfaction Client</span>
+              <span className="stat-label">Client Satisfaction</span>
             </div>
           </div>
           <div className="hero-buttons">
             <button className="primary-btn" onClick={scrollToContact}>
-              <span>Démarrer un Projet</span>
+              <span>Start a Project</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" strokeWidth="2"/>
               </svg>
             </button>
             <button className="secondary-btn" onClick={scrollToProjects}>
-              <span>Voir Mes Projets</span>
+              <span>View My Projects</span>
             </button>
           </div>
         </div>
@@ -72,11 +72,11 @@ function Hero() {
               </div>
               <div className="code-line">
                 <span className="line-number">02</span>
-                <span className="code-indent">  </span><span className="code-property">nom</span><span className="code-bracket">:</span> <span className="code-string">"Abdelkouddous El Alami"</span><span className="code-bracket">,</span>
+                <span className="code-indent">  </span><span className="code-property">name</span><span className="code-bracket">:</span> <span className="code-string">"Abdelkouddous El Alami"</span><span className="code-bracket">,</span>
               </div>
               <div className="code-line">
                 <span className="line-number">03</span>
-                <span className="code-indent">  </span><span className="code-property">role</span><span className="code-bracket">:</span> <span className="code-string">"Développeur Full-Stack"</span><span className="code-bracket">,</span>
+                <span className="code-indent">  </span><span className="code-property">role</span><span className="code-bracket">:</span> <span className="code-string">"Full-Stack Developer"</span><span className="code-bracket">,</span>
               </div>
               <div className="code-line">
                 <span className="line-number">04</span>
@@ -100,7 +100,7 @@ function Hero() {
               </div>
               <div className="code-line">
                 <span className="line-number">09</span>
-                <span className="code-indent">  </span><span className="code-property">status</span><span className="code-bracket">:</span> <span className="code-string">"disponible"</span>
+                <span className="code-indent">  </span><span className="code-property">status</span><span className="code-bracket">:</span> <span className="code-string">"available"</span>
               </div>
               <div className="code-line">
                 <span className="line-number">10</span>
@@ -111,7 +111,7 @@ function Hero() {
         </div>
       </div>
       <div className="scroll-indicator" onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
-        <div className="scroll-text">Défiler vers le bas</div>
+        <div className="scroll-text">Scroll down</div>
         <div className="scroll-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M12 5v14M19 12l-7 7-7-7"/>

@@ -28,8 +28,8 @@ function Contact() {
       <div className="contact-content">
         <div className="contact-info">
           <p className="contact-intro">
-            Je suis toujours ouvert aux opportunités de collaboration et aux nouveaux projets. 
-            N'hésitez pas à me contacter pour discuter de vos besoins ou simplement échanger!
+            I'm always open to collaboration opportunities and new projects. 
+            Feel free to contact me to discuss your needs or just to chat!
           </p>
           <div className="contact-methods">
             <div className="contact-method">
@@ -37,7 +37,7 @@ function Contact() {
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
               </svg>
               <div>
-                <h4>Téléphone</h4>
+                <h4>Phone</h4>
                 <a href="tel:+212611394586">+212 6 11 39 45 86</a>
               </div>
             </div>
@@ -79,7 +79,7 @@ function Contact() {
         </div>
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="name">Nom</label>
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
@@ -87,7 +87,7 @@ function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              placeholder="Votre Nom"
+              placeholder="Your Name"
             />
           </div>
           <div className="form-group">
@@ -99,7 +99,7 @@ function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              placeholder="votre.email@exemple.com"
+              placeholder="your.email@example.com"
             />
           </div>
           <div className="form-group">
@@ -111,10 +111,10 @@ function Contact() {
               onChange={handleChange}
               required
               rows="5"
-              placeholder="Votre message..."
+              placeholder="Your message..."
             ></textarea>
           </div>
-          <button type="submit" className="submit-btn">Envoyer le Message</button>
+          <button type="submit" className="submit-btn">Send Message</button>
         </form>
       </div>
     </section>

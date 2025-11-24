@@ -36,10 +36,10 @@ function Footer() {
   ]
 
   const quickLinks = [
-    { name: 'Accueil', href: '#home' },
-    { name: 'À Propos', href: '#about' },
-    { name: 'Compétences', href: '#skills' },
-    { name: 'Projets', href: '#projects' },
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Projects', href: '#projects' },
     { name: 'Contact', href: '#contact' }
   ]
 
@@ -60,17 +60,17 @@ function Footer() {
               <img src="/image-removebg-preview.png" alt="Logo" />
             </div>
             <p className="brand-description">
-              Développeur Full Stack passionné par la création d'expériences numériques exceptionnelles. 
-              Spécialisé dans le développement web moderne et les solutions innovantes.
+              Full Stack Developer passionate about creating exceptional digital experiences. 
+              Specialized in modern web development and innovative solutions.
             </p>
             <div className="footer-stats">
               <div className="stat-mini">
                 <span className="stat-number">20+</span>
-                <span className="stat-label">Projets</span>
+                <span className="stat-label">Projects</span>
               </div>
               <div className="stat-mini">
                 <span className="stat-number">2+</span>
-                <span className="stat-label">Années</span>
+                <span className="stat-label">Years</span>
               </div>
               <div className="stat-mini">
                 <span className="stat-number">10+</span>
@@ -81,7 +81,7 @@ function Footer() {
 
           {/* Quick Links */}
           <div className="footer-section">
-            <h4 className="footer-title">Navigation Rapide</h4>
+            <h4 className="footer-title">Quick Links</h4>
             <ul className="footer-links">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -106,13 +106,13 @@ function Footer() {
             </div>
             <div className="availability-badge">
               <span className="status-dot"></span>
-              <span>Disponible pour projets</span>
+              <span>Available for projects</span>
             </div>
           </div>
 
           {/* Contact & Social */}
           <div className="footer-section">
-            <h4 className="footer-title">Restons Connectés</h4>
+            <h4 className="footer-title">Stay Connected</h4>
             <div className="contact-info">
               <a href="mailto:abdoalami.ru@gmail.com" className="contact-item">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -126,7 +126,7 @@ function Footer() {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                   <circle cx="12" cy="10" r="3"/>
                 </svg>
-                <span>Maroc</span>
+                <span>Morocco</span>
               </div>
             </div>
             <div className="footer-social">
@@ -151,17 +151,17 @@ function Footer() {
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <div className="copyright">
-              <p>&copy; {currentYear} Abdelkouddous El Alami. Tous droits réservés.</p>
+              <p>&copy; {currentYear} Abdelkouddous El Alami. All rights reserved.</p>
               <p className="footer-tagline">
                 <span className="code-bracket">{'<'}</span>
-                Développé avec React & Passion
+                Built with React & Passion
                 <span className="code-bracket">{'/>'}</span>
               </p>
             </div>
             <button 
               onClick={scrollToTop} 
               className="scroll-top-btn"
-              aria-label="Retour en haut"
+              aria-label="Back to top"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="18 15 12 9 6 15"/>
